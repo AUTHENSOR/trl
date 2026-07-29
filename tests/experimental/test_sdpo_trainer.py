@@ -519,6 +519,7 @@ class TestSDPOTrainer(TrlTestCase):
             num_generations=3,
             max_completion_length=8,
             max_steps=1,
+            distillation_weight=0.0,  # Ensure policy loss path executes (not distillation)
             report_to="none",
         )
 
